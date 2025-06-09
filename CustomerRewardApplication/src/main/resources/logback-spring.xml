@@ -1,0 +1,30 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/CustomerRewards.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--  Application logs only -->
+    <logger name="com.infy" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <!--  Turn off Spring / third-party logs -->
+    <logger name="org.springframework" level="OFF"/>
+    <logger name="org.hibernate" level="OFF"/>
+    <logger name="org.apache" level="OFF"/>
+    <logger name="org" level="OFF"/>
+
+    <!--  Disable root logger to suppress other logs -->
+    <root level="OFF" />
+</configuration>

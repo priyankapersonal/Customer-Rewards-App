@@ -1,0 +1,16 @@
+2025-06-09 19:19:05 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 26636 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-09 19:19:05 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-09 19:19:05 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 19:19:05 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 0.348 seconds (process running for 835.987)
+2025-06-09 19:19:58 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Starting CustomerRewardsApplication using Java 17.0.12 with PID 29464 (C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication\target\classes started by Swati in C:\Users\Swati\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\Customer-Rewards-Application-master\CustomerRewardApplication)
+2025-06-09 19:19:58 [restartedMain] DEBUG com.infy.CustomerRewardsApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-09 19:19:58 [restartedMain] INFO  com.infy.CustomerRewardsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 19:20:00 [restartedMain] INFO  com.infy.CustomerRewardsApplication - Started CustomerRewardsApplication in 3.103 seconds (process running for 3.519)
+2025-06-09 19:20:26 [http-nio-8091-exec-2] DEBUG com.infy.CustomerRewardsApplication - Adding Customer : Customer{id=null, name=Merry}
+2025-06-09 19:20:26 [http-nio-8091-exec-2] INFO  com.infy.CustomerRewardsApplication - Saving Customer: Merry
+2025-06-09 19:20:26 [http-nio-8091-exec-2] INFO  com.infy.CustomerRewardsApplication - Customer saved successfully with ID: 1
+2025-06-09 19:20:26 [http-nio-8091-exec-2] INFO  com.infy.CustomerRewardsApplication - Customer added successfully : Customer{id=1, name=Merry}
+2025-06-09 19:20:53 [http-nio-8091-exec-3] DEBUG com.infy.CustomerRewardsApplication - Calculating rewards for customer : 1
+2025-06-09 19:20:53 [http-nio-8091-exec-3] INFO  com.infy.CustomerRewardsApplication - Calculating rewards for customer ID: 1
+2025-06-09 19:20:54 [http-nio-8091-exec-3] INFO  com.infy.CustomerRewardsApplication - Reward calculation completed for customer ID: 1
+2025-06-09 19:20:54 [http-nio-8091-exec-3] INFO  com.infy.CustomerRewardsApplication - Rewards calculated successfully for customer: 1
