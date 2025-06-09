@@ -115,75 +115,79 @@
 1. Add Customer
 
  POST: /api/rewards/addCustomer
- Request Body:
 
-    {
-        "customerName":"Merry",
-        "transaction":[
-            {
-               "amount":500.00,
-               "date": "2025-03-30"
+    Request Body:
     
-            },
-            {
-               "amount":70.00,
-               "date": "2025-04-30"
-               
-            },
-            {
-               "amount":150.00,
-               "date": "2025-05-30"          
-            }
-        ]
+        {
+            "customerName":"Merry",
+            "transaction":[
+                {
+                   "amount":500.00,
+                   "date": "2025-03-30"
         
-    }
-Response:
-
-201 Created with saved customer details.
+                },
+                {
+                   "amount":70.00,
+                   "date": "2025-04-30"
+                   
+                },
+                {
+                   "amount":150.00,
+                   "date": "2025-05-30"          
+                }
+            ]
+            
+        }
+        
+    Response:
+    
+    201 Created with saved customer details.
+    
 
 2. Calculate Rewards
 
 GET: /api/rewards/calculateRewards/1?startDate=2025-03-01&endDate=2025-05-31
-Response:
 
-    {
-        "Customer Details": {
-            "customerId": 1,
-            "customerName": "Merry",
-            "transaction": [
+    Response:
+    
+        {
+            "Customer Details": {
+                "customerId": 1,
+                "customerName": "Merry",
+                "transaction": [
+                    {
+                        "amount": 500.0,
+                        "date": "2025-03-30",
+                        "transactionId": 1
+                    },
+                    {
+                        "amount": 70.0,
+                        "date": "2025-04-30",
+                        "transactionId": 2
+                    },
+                    {
+                        "amount": 150.0,
+                        "date": "2025-05-30",
+                        "transactionId": 3
+                    }
+                ]
+            },
+            "Total Rewards": 1020,
+            "Rewards Breakdown": [
                 {
-                    "amount": 500.0,
-                    "date": "2025-03-30",
-                    "transactionId": 1
+                    "month": "MARCH",
+                    "points": 850
                 },
                 {
-                    "amount": 70.0,
-                    "date": "2025-04-30",
-                    "transactionId": 2
+                    "month": "APRIL",
+                    "points": 20
                 },
                 {
-                    "amount": 150.0,
-                    "date": "2025-05-30",
-                    "transactionId": 3
+                    "month": "MAY",
+                    "points": 150
                 }
             ]
-        },
-        "Total Rewards": 1020,
-        "Rewards Breakdown": [
-            {
-                "month": "MARCH",
-                "points": 850
-            },
-            {
-                "month": "APRIL",
-                "points": 20
-            },
-            {
-                "month": "MAY",
-                "points": 150
-            }
-        ]
-    }
+        }
 
     
 🚀 Setup Instructions
